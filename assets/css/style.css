@@ -1,0 +1,495 @@
+@import url("https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-weight: 400;
+  font-family: 'Hind Siliguri';
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #252934;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #cecece;
+}
+
+.ss {
+  color: #cecece;
+}
+
+.container {
+  height: inherit;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.margin {
+  margin: 0px auto;
+}
+
+#home {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-image: url(../img/Pozadina.png);
+  color: #cecece;
+}
+
+#home .container-fluid {
+  background-color: #252934;
+  border-bottom: 2px solid #008080;
+  width: inherit;
+}
+
+#home .container-fluid #nav {
+  height: 24px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+#home .container-fluid #nav #logo a:hover {
+  color: #ffff33;
+}
+
+#home .container-fluid #nav .active a {
+  color: #ffff33;
+}
+
+#home .container-fluid #nav ul {
+  display: inline;
+}
+
+#home .container-fluid #nav ul li {
+  display: inline-block;
+  margin: 0px 20px;
+}
+
+#home .container-fluid #nav ul li a:hover {
+  color: #ffff33;
+}
+
+#home #naslov {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#home #naslov #naslov-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#home #naslov #naslov-text p {
+  font-size: 3em;
+}
+
+#home #naslov #naslov-text h1 {
+  font-size: 3em;
+  color: #ffff33;
+}
+
+#home #naslov h2 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 45px;
+}
+
+#home #naslov #btn-about a {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid;
+  padding: 12px 20px 12px 20px;
+  font-size: 20px;
+}
+
+#home #naslov #btn-about a:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "FontAwesome";
+  content: "\f061";
+}
+
+#home #naslov #btn-about a:hover:after {
+  font-family: "FontAwesome";
+  content: "\f063";
+}
+
+#home #naslov #btn-about a:hover {
+  background-color: #008080;
+  border: 1px solid #008080;
+}
+
+#about {
+  height: 100vh;
+  background-color: #252934;
+}
+
+#about .naslov h2 {
+  margin-top: 180px;
+  margin-bottom: 90px;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#about .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#about .column .slicice {
+  width: 27%;
+  text-align: center;
+}
+
+#about .column .slicice span {
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  border: 20px solid #008080;
+  border-radius: 50%;
+  background-color: #008080;
+  color: #FFF;
+  margin-bottom: 20px;
+  color: #ffff33;
+}
+
+#about .column .slicice .slicice-naslov {
+  font-size: 30px;
+  margin-bottom: 5px;
+  color: #cecece;
+}
+
+#about .column .slicice .slicice-text {
+  font-size: 19px;
+  color: #cecece;
+}
+
+#about .column-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#about .column-me .about-me {
+  width: 37%;
+  margin-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#about .column-me .about-me #slika {
+  height: 300px;
+  text-align: center;
+}
+
+#about .column-me .about-me #slika img {
+  height: 300px;
+  border-radius: 70px;
+}
+
+#about .column-me .about-me span {
+  text-align: center;
+}
+
+#about .column-me .about-me span a {
+  color: #ffff33;
+  text-align: center;
+}
+
+#about .column-me .about-me p {
+  text-align: center;
+}
+
+#about .column-me .about-me .skills {
+  width: 100%;
+  height: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#about .column-me .about-me .skills #text-fill {
+  width: 20%;
+  height: inherit;
+  background-color: #008080b0;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  color: #ffff33;
+}
+
+#about .column-me .about-me .skills .fill {
+  width: 80%;
+  height: inherit;
+  background-color: #cecece;
+}
+
+#about .column-me .about-me .skills .fill #htmlfill {
+  width: 85%;
+  height: inherit;
+  background-color: #008080;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#about .column-me .about-me .skills .fill #cssfill {
+  width: 80%;
+  height: inherit;
+  background-color: #008080;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#about .column-me .about-me .skills .fill #jsfill {
+  width: 10%;
+  height: inherit;
+  background-color: #008080;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#about .column-me .about-me .skills .fill #psfill {
+  width: 40%;
+  height: inherit;
+  background-color: #008080;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#about .column-me .about-me .skills .fill #designfill {
+  width: 60%;
+  height: inherit;
+  background-color: #008080;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#about .column-me .about-me .skills .text {
+  height: inherit;
+  text-align: right;
+  background-color: #cecece;
+  padding-right: 2%;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/*za hamburger menu
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0;
+  }
+  
+   Button styling 
+  .menu-toggle {
+	display: inline-block;
+	padding: .75em 15px;
+	line-height: 1em;
+	font-size: 1em;
+	color: #333;
+  }
+  
+  .menu-toggle:hover,
+  .menu-toggle:focus {
+	color: #c00;
+  }
+  
+  
+   Default styles + Mobile first
+   Offscreen menu style
+  
+  .main-menu {
+	position: absolute;
+	display: none;
+	left: -200px;
+	top: 0;
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: visible;
+	transition: left 0.3s ease,
+		  box-shadow 0.3s ease;
+	z-index: 999;
+  }
+  
+  .main-menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 2.5em 0 0;
+	 Hide shadow w/ -8px while 'closed' 
+	-webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+	   -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+			box-shadow: -8px 0 8px rgba(0,0,0,.5);
+	min-height: 100%;
+	width: 200px;
+	background: #1a1a1a;
+  }
+  
+  .main-menu a {
+	display: block;
+	padding: .75em 15px;
+	line-height: 1em;
+	font-size: 1em;
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid #383838;
+  }
+  
+  .main-menu li:first-child a {
+	border-top: 1px solid #383838;
+  }
+  
+  .main-menu a:hover,
+  .main-menu a:focus {
+	background: #333;
+	text-decoration: underline;
+  }
+  
+  .main-menu .menu-close {
+	position: absolute;
+	right: 0;
+	top: 0;
+  }
+  
+  
+   On small devices, allow it to toggle...
+  
+  
+   :target for non-JavaScript
+   [aria-expanded] will be used if/when JavaScript is added to improve interaction, though it's completely optional.
+  
+  .main-menu:target,
+  .main-menu[aria-expanded="true"] {
+	display: block;
+	left: 0;
+	outline: none;
+	-moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+	-webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+	box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  }
+  
+  .main-menu:target .menu-close,
+  .main-menu[aria-expanded="true"] .menu-close {
+	z-index: 1001;
+  }
+  
+  .main-menu:target ul,
+  .main-menu[aria-expanded="true"] ul {
+	position: relative;
+	z-index: 1000;
+  }
+  
+  
+   We could us `.main-menu:target:after`, but
+   it wouldn't be clickable.
+  
+  .main-menu:target + .backdrop,
+  .main-menu[aria-expanded="true"] + .backdrop{
+	position: absolute;
+	display: block;  
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 998;
+	background: #000;
+	background: rgba(0,0,0,.85);
+	cursor: default;
+  }
+  
+  @supports (position: fixed) {
+	.main-menu,
+	.main-menu:target + .backdrop,
+	.main-menu[aria-expanded="true"] + .backdrop{
+	  position: fixed;
+	}
+  }
+  
+  
+  
+   Demo purposes only
+  
+  *,
+  *:before,
+  *:after {
+	box-sizing: border-box;
+  }
+  
+  header {
+	padding: 20px;
+	display: flex;
+	align-items: baseline;
+  }
+  
+  article {
+	padding: 30px;
+	width: 55em;
+	font-size: 16px;
+	line-height: 1.5em;
+  }
+  
+  article h2 {
+	font-weight: 500;
+	font-size: 28px;
+  }
+  
+  .logo {
+	margin: 0 30px 0 10px;
+	font-size: 1.5em;
+  } */
+/*# sourceMappingURL=style.css.map */
