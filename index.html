@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="sr-Latin-RS">
 	<head>
-		<link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet"/>
 		<link rel="shortcut icon" href="img/favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 		<meta charset="utf-8" />
@@ -11,6 +11,27 @@
 		<title></title>
 	</head>
 	<body>
+		<div id="burger">
+			<i class="material-icons">menu</i>
+		</div>
+		<div id="mobile-menu">
+			<div class="mobile-menu-container">
+				<ul>
+					<li>
+						<a href="#home">Home</a>
+					</li>
+					<li>
+						<a href="#about">About</a>
+					</li>
+					<li>
+						<a href="#project">Project</a>
+					</li>
+					<li>
+						<a href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 		<div id="home">
 			<div class="container">
 				<div id="naslov">
@@ -26,67 +47,67 @@
 						Designer and front-end developer
 					</h2>
 					<div id="btn-about">
-						<a href="#about">
+						<a href="#project">
 							View my Work 
 						</a>
 					</div>
 				</div>
 			</div>
-			<div id="container-fluid">
-				<div>
-					<nav id="nav">
-						<div id="logo">
-							<a href="#home">
-								<h1>
-									BS
-								</h1>
-							</a>
-						</div>
-	<!--	HAMBURGER MENU				<div class="topnav">
-							<a href="#main-menu"
-								id="main-menu-toggle"
-								class="menu-toggle"
-								aria-label="Open main menu">
-							<span class="sr-only">Open main menu</span>
-							<span class="fa fa-bars" aria-hidden="true"></span>
-							</a>
-							<nav id="main-menu" class="main-menu" aria-label="Main menu">
-							<a href="#main-menu-toggle"
-								id="main-menu-close"
-								class="menu-close"
-								aria-label="Close main menu">
-								<span class="sr-only">Close main menu</span>
-								<span class="fa fa-close" aria-hidden="true"></span>
-							</a>
-							<ul>
-								<li><a href="#">Products</a></li>
-								<li><a href="#">About</a></li>
-								<li><a href="#">Contact</a></li>
-							</ul>
-							</nav>
-							<a href="#main-menu-toggle"
-								class="backdrop"
-								tabindex="-1"
-								aria-hidden="true" hidden></a>
-						  </div>-->
-						<div id="meni">
-							<ul>
-								<li class="active">
-									<a href="#home">Home</a>
-								</li>
-								<li>
-									<a href="#about">About</a>
-								</li>
-								<li>
-									<a href="#project">Project</a>
-								</li>
-								<li>
-									<a href="#contact">Contact</a>
-								</li>
-							</ul>
-						</div>
-					</nav>
-				</div>
+		</div>
+		<div id="container-fluid">
+			<div class="container">
+				<nav id="nav">
+					<div id="logo">
+						<a href="#home">
+							<h1>
+								BS
+							</h1>
+						</a>
+					</div>
+<!--	HAMBURGER MENU				<div class="topnav">
+						<a href="#main-menu"
+							id="main-menu-toggle"
+							class="menu-toggle"
+							aria-label="Open main menu">
+						<span class="sr-only">Open main menu</span>
+						<span class="fa fa-bars" aria-hidden="true"></span>
+						</a>
+						<nav id="main-menu" class="main-menu" aria-label="Main menu">
+						<a href="#main-menu-toggle"
+							id="main-menu-close"
+							class="menu-close"
+							aria-label="Close main menu">
+							<span class="sr-only">Close main menu</span>
+							<span class="fa fa-close" aria-hidden="true"></span>
+						</a>
+						<ul>
+							<li><a href="#">Products</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+						</nav>
+						<a href="#main-menu-toggle"
+							class="backdrop"
+							tabindex="-1"
+							aria-hidden="true" hidden></a>
+					  </div>-->
+					<div id="meni">
+						<ul>
+							<li class="active">
+								<a href="#home">Home</a>
+							</li>
+							<li>
+								<a href="#about">About</a>
+							</li>
+							<li>
+								<a href="#project">Project</a>
+							</li>
+							<li>
+								<a href="#contact">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
 			</div>
 		</div>
 		<div id="about">
@@ -97,7 +118,7 @@
 					</h2>
 				</div>
 				<div class="column">
-					<span class="slicice">
+					<div class="slicice">
 						<div class="ikonica">
 							<span class="fas fa-mobile-alt"></span>
 						</div>
@@ -107,8 +128,8 @@
 						<p class="slicice-text"> 
 							Fast load times is my highest priority.
 						</p>
-					</span>
-					<span class="slicice">
+					</div>
+					<div class="slicice">
 						<div class="ikonica">
 							<span class="fab fa-chromecast"></span>
 						</div>
@@ -118,8 +139,8 @@
 						<p class="slicice-text">
 							Strong preference for easy to use, intuitive UX/UI.
 						</p>
-					</span>
-					<span class="slicice">
+					</div>
+					<div class="slicice">
 						<div class="ikonica">
 							<span class="far fa-lightbulb"></span>
 						</div>
@@ -129,7 +150,7 @@
 						<p class="slicice-text">
 							My layouts will work on any device, big or small.
 						</p>
-					</span>
+					</div>
 				</div>
 				<div class="column-me">
 					<div class="about-me">
@@ -157,11 +178,11 @@
 									
 								</div>
 							</div>
-							<div class="text">
+							<!-- <div class="text">
 								<p>
 									85%
 								</p>
-							</div>
+							</div> -->
 						</div>
 						<div class="skills">
 							<div id="text-fill">
@@ -174,16 +195,16 @@
 									
 								</div>
 							</div>
-							<div class="text">
+							<!-- <div class="text">
 								<p>
 									80%
 								</p>
-							</div>
+							</div> -->
 						</div>
 						<div class="skills">
 							<div id="text-fill">
 								<p>
-									JavaScript
+									JS
 								</p>
 							</div>
 							<div class="fill">
@@ -191,26 +212,26 @@
 									
 								</div>
 							</div>
-							<div class="text">
+							<!-- <div class="text">
 								<p>
 									10%
 								</p>
-							</div>
+							</div> -->
 						</div>
 						<div class="skills">
 							<div id="text-fill">
-								<p>Photoshop</p>
+								<p>PS</p>
 							</div>
 							<div class="fill">
 								<div id="psfill">
 									
 								</div>
 							</div>
-							<div class="text">
+							<!-- <div class="text">
 								<p>
 									40%
 								</p>
-							</div>
+							</div> -->
 						</div>
 						<div class="skills">
 							<div id="text-fill">
@@ -221,29 +242,108 @@
 									
 								</div>
 							</div>
-							<div class="text">
+							<!-- <div class="text">
 								<p>
 									60%
 								</p>
-							</div>
+							</div> -->
 						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="project">
+			<div class="container">
+				<div class="naslov">
+					<h2 class="ss">
+						Project
+					</h2>
+				</div>
+				<div class="column">
+					<div id="gore">
+						<div class="slicice">
+							<img src="assets/img/artelektro.png" alt="artelektro">
+							<p>ArtElektro</p>
+						</div>
+						<div class="slicice">
+							<img src="assets/img/portfolio.png" alt="portfolio">
+							<p>Portfolio</p>
+						</div>
+					</div>
+					<div id="dole">
+						<img src="assets/img/kacafitnes.png" alt="kacafitnes">
+						<p>Kaca Fitnes</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="contact">
+			<div class="container">
+				<div class="naslov">
+					<h2 class="ss">
+						Contact
+					</h2>
+				</div>
+				<div class="margin">
+					<p>
+
+					</p>
+				</div>
+				<div class="column">
+					<div class="form">
+						<input placeholder="Name" type="text" name="name" required=""/>
+					</div>
+					<div class="form">
+						<input placeholder="Email" type="email" name="email" required=""/>
+					</div>
+					<div class="text form">
+						<textarea placeholder="Your Message" type="text" name="message"></textarea>
+					</div>
+					<div class="btn">
+						<a href="#">
+							<input class="button" type="submit" value="Send message" id="submit" value="SUBMIT"/>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="container">
+				<div class="margin">
+					<div class="social">
+						<a href="https://www.facebook.com/bojan.stojkovic.1996">
+							<i class="fab fa-facebook"></i>
+						</a>
+					</div>
+					<div class="social">
+						<a href="https://instagram.com">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</div>
+					<div class="social">
+						<a href="https://www.linkedin.com/">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+					</div>
+				</div>
+				<div id="linkovi">
+					<div class="link">
+						
+					</div>
+					<div class="link">
+						
+					</div>
+					<div class="link">
+
+					</div>
+					<div class="link">
+						
 					</div>
 				</div>
 			</div>
 		</div>
 	<script src="https://kit.fontawesome.com/b754a902c9.js" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-				<script>
-					$(window).scroll(function(event) { 
-						var menu = $('#container-fluid'); 
-						var isPositionFixed = (menu.css('position') === 'fixed');
-
-						if ($(this).scrollTop() > window.innerHeight - 70 && !isPositionFixed)
-							menu.css({'position': 'fixed', 'top': '0px'});
-						
-						if ($(this).scrollTop() < window.innerHeight - 70 && isPositionFixed)
-							menu.css({'position': 'static', 'top': '0px'}); 
-					});
-				</script>
+	<script src="assets/js/portfolio.js"></script>
 	</body>
 </html>

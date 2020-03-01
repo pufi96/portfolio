@@ -21,11 +21,16 @@ a {
 }
 .container{
 	height: inherit;
-	width: 80%;
+	width: 1200px;
 	margin: 0px auto;
 }
 .margin{
 	margin: 0px auto;
+}
+.fixed{
+	position: fixed;
+	top: 40px;
+	margin-top: -40px;
 }
 #home {
 	width: 100%;
@@ -33,41 +38,6 @@ a {
 	background-size: cover;
 	background-image: url(../img/Pozadina.png);
 	color: #cecece;
-	.container-fluid{
-		background-color: #252934;
-		border-bottom: 2px solid #008080;
-		width: inherit;
-		#nav{
-		height: 24px;
-		padding-top: 10px;
-		padding-bottom: 5px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		font-size: 1.2em;
-		text-transform: uppercase;
-			#logo{
-				a:hover{
-					color: #ffff33;
-				}
-			}
-			.active{
-				a{
-					color: #ffff33;
-				}
-			}
-			ul{
-				display: inline;
-				li{
-					display: inline-block;
-					margin: 0px 20px;
-					a:hover{
-						color: #ffff33;
-					}
-				}
-			}
-		}
-	}
 		#naslov{
 			height: inherit;
 			display: flex;
@@ -83,6 +53,7 @@ a {
 				h1{
 					font-size: 3em;
 					color: #ffff33;
+					text-align: center;
 				}
 			}
 			h2{
@@ -114,12 +85,50 @@ a {
 			}
 		}
 }
+#container-fluid{
+	background-color: #252934;
+	border-bottom: 2px solid #008080;
+	width: 100%;
+	margin-top: -40px;
+	#nav{
+	height: 24px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.2em;
+	text-transform: uppercase;
+		#logo{
+			a:hover{
+				color: #ffff33;
+			}
+		}
+		.active{
+			a{
+				color: #ffff33;
+			}
+		}
+		ul{
+			display: inline;
+			li{
+				display: inline-block;
+				margin: 0px 20px;
+				a:hover{
+					color: #ffff33;
+				}
+			}
+		}
+	}
+}
 #about{
+	box-sizing: border-box;
+	padding-top: 50px;
 	height: 100vh;
 	background-color: #252934;
 	.naslov{
 		h2{
-			margin-top: 180px;
+			margin-top: 80px;
 			margin-bottom: 90px;
 			font-size: 50px;
 			text-align: center;
@@ -132,8 +141,11 @@ a {
 		margin: 0px auto;
 		justify-content: space-between;
 		.slicice{
-			width: 27%;
+			width: 300px;
 			text-align: center;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
 			span{
 				width:40px;
 				height: 40px;
@@ -161,16 +173,17 @@ a {
 		margin: 0px auto;
 		justify-content: space-evenly;
 		.about-me{
-			width: 37%;
+			width: 496px;
 			margin-top: 120px;
 			display: flex;
 			flex-direction: column;
+			flex-wrap: wrap;
 			#slika{
 				height: 300px;
 				text-align: center;
 				img{
 					height: 300px;
-					border-radius: 70px;
+					border-radius: 40px;
 				}
 			}
 			span{
@@ -178,19 +191,19 @@ a {
 				a{
 				color: #ffff33;
 				text-align: center;
+				}
 			}
-			}
-			
 			p{
 				text-align: center;
 			}
 			.skills{
-				width: 100%;
+				width: 496px;
 				height: 28px;
 				display: flex;
 				margin-bottom: 20px;
+				justify-content: center;
 				#text-fill{
-					width: 20%;
+					width: 80px;
 					height: inherit;
 					background-color: #008080b0;
 					border-bottom-left-radius: 10px;
@@ -198,9 +211,11 @@ a {
 					color: #ffff33;
 				}
 				.fill{
-					width: 80%;
+					width: 390px;
 					height: inherit;
 					background-color: #cecece;
+					border-bottom-right-radius: 10px;
+					border-top-right-radius: 10px;
 					#htmlfill{
 						width: 85%;
 						height: inherit;
@@ -249,226 +264,169 @@ a {
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*za hamburger menu
-.sr-only {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	padding: 0;
-	margin: -1px;
-	overflow: hidden;
-	clip: rect(0,0,0,0);
-	border: 0;
-  }
-  
-   Button styling 
-  .menu-toggle {
-	display: inline-block;
-	padding: .75em 15px;
-	line-height: 1em;
-	font-size: 1em;
-	color: #333;
-  }
-  
-  .menu-toggle:hover,
-  .menu-toggle:focus {
-	color: #c00;
-  }
-  
-  
-   Default styles + Mobile first
-   Offscreen menu style
-  
-  .main-menu {
-	position: absolute;
-	display: none;
-	left: -200px;
-	top: 0;
-	height: 100%;
-	overflow-y: scroll;
-	overflow-x: visible;
-	transition: left 0.3s ease,
-		  box-shadow 0.3s ease;
-	z-index: 999;
-  }
-  
-  .main-menu ul {
-	list-style: none;
-	margin: 0;
-	padding: 2.5em 0 0;
-	 Hide shadow w/ -8px while 'closed' 
-	-webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
-	   -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
-			box-shadow: -8px 0 8px rgba(0,0,0,.5);
-	min-height: 100%;
-	width: 200px;
-	background: #1a1a1a;
-  }
-  
-  .main-menu a {
-	display: block;
-	padding: .75em 15px;
-	line-height: 1em;
-	font-size: 1em;
-	color: #fff;
-	text-decoration: none;
-	border-bottom: 1px solid #383838;
-  }
-  
-  .main-menu li:first-child a {
-	border-top: 1px solid #383838;
-  }
-  
-  .main-menu a:hover,
-  .main-menu a:focus {
-	background: #333;
-	text-decoration: underline;
-  }
-  
-  .main-menu .menu-close {
-	position: absolute;
-	right: 0;
-	top: 0;
-  }
-  
-  
-   On small devices, allow it to toggle...
-  
-  
-   :target for non-JavaScript
-   [aria-expanded] will be used if/when JavaScript is added to improve interaction, though it's completely optional.
-  
-  .main-menu:target,
-  .main-menu[aria-expanded="true"] {
-	display: block;
-	left: 0;
-	outline: none;
-	-moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
-	-webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
-	box-shadow: 3px 0 12px rgba(0,0,0,.25);
-  }
-  
-  .main-menu:target .menu-close,
-  .main-menu[aria-expanded="true"] .menu-close {
-	z-index: 1001;
-  }
-  
-  .main-menu:target ul,
-  .main-menu[aria-expanded="true"] ul {
-	position: relative;
-	z-index: 1000;
-  }
-  
-  
-   We could us `.main-menu:target:after`, but
-   it wouldn't be clickable.
-  
-  .main-menu:target + .backdrop,
-  .main-menu[aria-expanded="true"] + .backdrop{
-	position: absolute;
-	display: block;  
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 998;
-	background: #000;
-	background: rgba(0,0,0,.85);
-	cursor: default;
-  }
-  
-  @supports (position: fixed) {
-	.main-menu,
-	.main-menu:target + .backdrop,
-	.main-menu[aria-expanded="true"] + .backdrop{
-	  position: fixed;
-	}
-  }
-  
-  
-  
-   Demo purposes only
-  
-  *,
-  *:before,
-  *:after {
+#project{
 	box-sizing: border-box;
-  }
-  
-  header {
-	padding: 20px;
-	display: flex;
-	align-items: baseline;
-  }
-  
-  article {
-	padding: 30px;
-	width: 55em;
-	font-size: 16px;
-	line-height: 1.5em;
-  }
-  
-  article h2 {
-	font-weight: 500;
-	font-size: 28px;
-  }
-  
-  .logo {
-	margin: 0 30px 0 10px;
-	font-size: 1.5em;
-  } */ 
+	padding-top: 50px;
+	height: 100vh;
+	background-color: #252934;
+	.naslov{
+		h2{
+			margin-top: 80px;
+			margin-bottom: 90px;
+			font-size: 50px;
+			text-align: center;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+	}
+	.column{
+		display: flex;
+		margin: 0px auto;
+		flex-direction: column;
+		#gore{
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			justify-content: space-around;
+			margin-bottom: 150px;
+		}
+		.slicice{
+			width: 500px;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			img{
+				width: inherit;
+			}
+		}
+		#dole{
+			width: 500px;
+			margin: 0px auto;
+			text-align: center;
+			img{
+				width: inherit;
+			}
+		}
+	}
+}
+#contact{
+	box-sizing: border-box;
+	padding-top: 50px;
+	height: 100vh;
+	background-color: #252934;
+	.naslov{
+		h2{
+			margin-top: 80px;
+			margin-bottom: 90px;
+			font-size: 50px;
+			text-align: center;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+	}
+	.column{
+		display: flex;
+		
+		justify-content: space-between;
+		flex-direction: column;
+		.form{
+			margin: 0px auto;
+			margin-top: 70px;
+			input{
+				width: 500px;
+				border-left: 2px solid #008080;
+				border-bottom: 2px solid #008080;
+				border-right: 2px solid #008080;
+				border-top: none;
+				border-radius: 10px;
+				padding: 3px 0px 3px 10px;
+				outline: none;
+				font-size: 20px;
+				
+			}
+			textarea{
+				width: 500px;
+				height: 90px;
+				border-left: 2px solid #008080;
+				border-bottom: 2px solid #008080;
+				border-right: 2px solid #008080;
+				border-top: none;
+				border-radius: 10px;
+				padding: 3px 0px 3px 10px;
+				outline: none;
+				resize: none;
+				font-size: 20px;
+			}
+		}
+		.btn{
+			margin: 0px auto;
+			margin-top: 70px;
+			input{
+				border: 2px solid #008080;
+				border-radius: 10px;
+				outline: none;
+				font-size: 20px;
+				padding: 3px 5px;
+				cursor: pointer;
+			}
+		}
+
+	}
+}
+#footer{
+	.margin{
+		display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+		i{
+			font-size: 30px;
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#burger{
+	color:#cecece;
+	position: fixed;
+	top:0px;
+	right:0px;
+	z-index:4;
+}
+#mobile-menu{
+	color:#cecece;
+		display:none;
+		.mobile-menu-container{
+			top:0px;
+			left:0px;
+			position:fixed;
+			width:100%;
+			height:100%;
+			background:#252934;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index:3;
+			}
+			li{
+				height: 50px;
+				font-size:30px;
+				}
+}
+.mobile-menu-active{
+	display: block !important;
+}
