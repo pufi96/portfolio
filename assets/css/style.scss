@@ -74,11 +74,13 @@ a {
 	background-size: cover;
 	background-image: url(../img/Pozadina.png);
 	color: #cecece;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 		#naslov{
 			height: inherit;
 			display: flex;
 			align-items: center;
-			justify-content: center;
 			flex-direction: column;
 			#naslov-text{
 				display: flex;
