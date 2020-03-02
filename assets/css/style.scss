@@ -21,7 +21,7 @@ a {
 }
 .container{
 	height: inherit;
-	width: 1200px;
+	width: 80%;
 	margin: 0px auto;
 }
 .margin{
@@ -32,9 +32,45 @@ a {
 	top: 40px;
 	margin-top: -40px;
 }
+#container-fluid{
+	background-color: #252934;
+	border-bottom: 2px solid #008080;
+	width: 100%;
+	margin-top: -40px;
+	#nav{
+	height: 24px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.2em;
+	text-transform: uppercase;
+		#logo{
+			a:hover{
+				color: #ffff33;
+			}
+		}
+		.active{
+			a{
+				color: #ffff33;
+			}
+		}
+		ul{
+			display: inline;
+			li{
+				display: inline-block;
+				margin: 0px 20px;
+				a:hover{
+					color: #ffff33;
+				}
+			}
+		}
+	}
+}
 #home {
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 	background-size: cover;
 	background-image: url(../img/Pozadina.png);
 	color: #cecece;
@@ -85,46 +121,10 @@ a {
 			}
 		}
 }
-#container-fluid{
-	background-color: #252934;
-	border-bottom: 2px solid #008080;
-	width: 100%;
-	margin-top: -40px;
-	#nav{
-	height: 24px;
-	padding-top: 10px;
-	padding-bottom: 5px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	font-size: 1.2em;
-	text-transform: uppercase;
-		#logo{
-			a:hover{
-				color: #ffff33;
-			}
-		}
-		.active{
-			a{
-				color: #ffff33;
-			}
-		}
-		ul{
-			display: inline;
-			li{
-				display: inline-block;
-				margin: 0px 20px;
-				a:hover{
-					color: #ffff33;
-				}
-			}
-		}
-	}
-}
 #about{
 	box-sizing: border-box;
-	padding-top: 50px;
-	height: 100vh;
+	padding-top: 30px;
+	min-height: 100vh;
 	background-color: #252934;
 	.naslov{
 		h2{
@@ -138,14 +138,16 @@ a {
 	}
 	.column{
 		display: flex;
-		margin: 0px auto;
 		justify-content: space-between;
+		flex-wrap: wrap;
 		.slicice{
 			width: 300px;
 			text-align: center;
 			display: flex;
 			flex-direction: column;
 			flex-wrap: wrap;
+			margin: 0px auto;
+			margin-bottom: 50px;
 			span{
 				width:40px;
 				height: 40px;
@@ -168,16 +170,16 @@ a {
 			}
 		}
 	}
-	.column-me{
+	#column-me{
 		display: flex;
-		margin: 0px auto;
 		justify-content: space-evenly;
+		flex-wrap: wrap;
 		.about-me{
 			width: 496px;
-			margin-top: 120px;
+			margin-top: 90px;
 			display: flex;
 			flex-direction: column;
-			flex-wrap: wrap;
+			
 			#slika{
 				height: 300px;
 				text-align: center;
@@ -191,6 +193,9 @@ a {
 				a{
 				color: #ffff33;
 				text-align: center;
+				}
+				a:hover{
+					color: #008080;
 				}
 			}
 			p{
@@ -266,13 +271,13 @@ a {
 }
 #project{
 	box-sizing: border-box;
-	padding-top: 50px;
-	height: 100vh;
+	padding-top: 30px;
+	min-height: 100vh;
 	background-color: #252934;
 	.naslov{
 		h2{
 			margin-top: 80px;
-			margin-bottom: 90px;
+			margin-bottom: 150px;
 			font-size: 50px;
 			text-align: center;
 			font-weight: 700;
@@ -281,39 +286,43 @@ a {
 	}
 	.column{
 		display: flex;
-		margin: 0px auto;
 		flex-direction: column;
+		color: #ffff33;
 		#gore{
 			display: flex;
 			flex-wrap: wrap;
 			flex-direction: row;
 			justify-content: space-around;
-			margin-bottom: 150px;
+			
 		}
 		.slicice{
-			width: 500px;
+			width: 400px;
 			text-align: center;
 			display: flex;
 			flex-direction: column;
 			flex-wrap: wrap;
+			margin-bottom: 100px;
+			
 			img{
-				width: inherit;
+				width: 350px;
+				margin: 0px auto;
 			}
 		}
 		#dole{
-			width: 500px;
+			width: 350px;
 			margin: 0px auto;
 			text-align: center;
 			img{
 				width: inherit;
+				margin: 0px auto;
 			}
 		}
 	}
 }
 #contact{
 	box-sizing: border-box;
-	padding-top: 50px;
-	height: 100vh;
+	padding-top: 30px;
+	min-height: 100vh;
 	background-color: #252934;
 	.naslov{
 		h2{
@@ -327,7 +336,6 @@ a {
 	}
 	.column{
 		display: flex;
-		
 		justify-content: space-between;
 		flex-direction: column;
 		.form{
@@ -369,6 +377,11 @@ a {
 				font-size: 20px;
 				padding: 3px 5px;
 				cursor: pointer;
+				color: #252934;
+			}
+			input:hover{
+				background-color: #252934;
+				color: #008080;
 			}
 		}
 
@@ -381,6 +394,9 @@ a {
 			justify-content: space-around;
 		i{
 			font-size: 30px;
+		}
+		i:hover{
+			color: #ffff33;
 		}
 	}
 	
@@ -405,6 +421,7 @@ a {
 	top:0px;
 	right:0px;
 	z-index:4;
+	display: none;
 }
 #mobile-menu{
 	color:#cecece;
