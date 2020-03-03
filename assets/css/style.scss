@@ -38,14 +38,14 @@ a {
 	width: 100%;
 	margin-top: -40px;
 	#nav{
-	height: 24px;
-	padding-top: 10px;
-	padding-bottom: 5px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	font-size: 1.2em;
-	text-transform: uppercase;
+		height: 24px;
+		padding-top: 10px;
+		padding-bottom: 5px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 1.2em;
+		text-transform: uppercase;
 		#logo{
 			a:hover{
 				color: #ffff33;
@@ -72,7 +72,7 @@ a {
 	width: 100%;
 	min-height: 100vh;
 	background-size: cover;
-	background-image: url(../img/Pozadina.png);
+	background-image: url(../img/pozadina.png);
 	color: #cecece;
 	display: flex;
 	align-items: center;
@@ -185,6 +185,7 @@ a {
 			#slika{
 				height: 300px;
 				text-align: center;
+				margin-bottom: 30px;
 				img{
 					height: 300px;
 					border-radius: 40px;
@@ -192,6 +193,7 @@ a {
 			}
 			span{
 				text-align: center;
+				margin-top: 10px;
 				a{
 				color: #ffff33;
 				text-align: center;
@@ -209,10 +211,10 @@ a {
 				display: flex;
 				margin-bottom: 20px;
 				justify-content: center;
-				#text-fill{
+				.text-fill{
 					width: 80px;
 					height: inherit;
-					background-color: #008080b0;
+					background-color: #008080;
 					border-bottom-left-radius: 10px;
 					border-top-left-radius: 10px;
 					color: #ffff33;
@@ -295,28 +297,36 @@ a {
 			flex-wrap: wrap;
 			flex-direction: row;
 			justify-content: space-around;
-			
-		}
-		.slicice{
-			width: 400px;
-			text-align: center;
-			display: flex;
-			flex-direction: column;
-			flex-wrap: wrap;
-			margin-bottom: 100px;
-			
-			img{
-				width: 350px;
-				margin: 0px auto;
+			.slicice{
+				width: 500px;
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				margin-bottom: 100px;
+				img{
+					width: 450px;
+					margin: 0px auto;
+				}
 			}
 		}
 		#dole{
-			width: 350px;
-			margin: 0px auto;
-			text-align: center;
-			img{
-				width: inherit;
-				margin: 0px auto;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			justify-content: space-around;
+			.slicice{
+				width: 500px;
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				margin-bottom: 100px;
+				
+				img{
+					width: 450px;
+					margin: 0px auto;
+				}
 			}
 		}
 	}
@@ -329,7 +339,7 @@ a {
 	.naslov{
 		h2{
 			margin-top: 80px;
-			margin-bottom: 90px;
+			margin-bottom: 40px;
 			font-size: 50px;
 			text-align: center;
 			font-weight: 700;
@@ -338,13 +348,15 @@ a {
 	}
 	.column{
 		display: flex;
-		justify-content: space-between;
 		flex-direction: column;
+		width: 500px;
+		margin: 0px auto;
 		.form{
 			margin: 0px auto;
-			margin-top: 70px;
+			margin-top: 30px;
+			width: 500px;
 			input{
-				width: 500px;
+				width: inherit;
 				border-left: 2px solid #008080;
 				border-bottom: 2px solid #008080;
 				border-right: 2px solid #008080;
@@ -353,10 +365,10 @@ a {
 				padding: 3px 0px 3px 10px;
 				outline: none;
 				font-size: 20px;
-				
+				box-sizing: border-box;
 			}
 			textarea{
-				width: 500px;
+				width: inherit;
 				height: 90px;
 				border-left: 2px solid #008080;
 				border-bottom: 2px solid #008080;
@@ -367,6 +379,7 @@ a {
 				outline: none;
 				resize: none;
 				font-size: 20px;
+				box-sizing: border-box;
 			}
 		}
 		.btn{
@@ -390,20 +403,137 @@ a {
 	}
 }
 #footer{
-	.margin{
+	box-sizing: border-box;
+	margin-top: 70px;
+	margin-bottom: 10px;
+	border-top: 2px solid #008080;
+	.container{
+		margin-top: 10px;
 		display: flex;
-			flex-direction: row;
-			justify-content: space-around;
-		i{
-			font-size: 30px;
+		flex-direction: row;
+		justify-content: space-between;
+		#mreze{
+		width: 30%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+			i{
+				font-size: 20px;
+			}
+			i:hover{
+				color: #ffff33;
+			}
 		}
-		i:hover{
-			color: #ffff33;
+		#linkovi{
+			width: 30%;
+			display: flex;
+			flex-direction: row;
+			justify-content:space-between;
+			a:hover{
+				color: #ffff33;
+			}
 		}
 	}
-	
 }
+@media screen and (max-width: 1250px){
+	body{
+		#project{
+			.container{
+				.column{
+					#gore{
+						.slicice{
+							width: 350px;
+							img{
+								width: 300px;
+							}
+						}
+					}
+					#dole{
+						.slicice{
+							width: 350px;
+							img{
+								width: 300px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 600px){
+	body{
+		#home{
+			.container{
+				#naslov{
+					#naslov-text{
+						h1{
+							font-size: 2em;
+						}
+					}
+					h2{
+					font-size: 1.5em;
+					}
+					#btn-about{
+						a{
+							padding: 8px 16px 8px 16px;
+							font-size: 15px;
+						}
+						a:after{
+							box-sizing: border-box;
+							font-family: "FontAwesome";
+							content: "\f063";
+						}
+						a:hover:after{
+							font-family: "FontAwesome";
+							content: "\f063";
+						}
+						a:hover{
+							background-color: #252934;
+							border: 1px solid #cecece;
+						}
+					}
+				}
+			}
+		}
+		#container-fluid{
+			.container{
+				#nav{
+					ul{
+						li{
+							margin: 0px 5px;
+						}
+					}
+				}
 
+			}
+		}
+		#about{
+			#column-me{
+				.about-me{
+					width: 90%; 
+					.skills{
+						width: 90%;
+						.text-fill{
+							width: 15%;
+						}
+						.fill{
+							width: 70%;
+						}
+					}
+				}
+			}
+		}
+		#contact{
+				.column{
+					width: 80% !important;
+					.form{
+						width: 100% !important;
+					}
+				}
+		}
+	}
+}
 
 
 

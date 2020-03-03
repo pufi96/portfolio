@@ -89,7 +89,7 @@ a {
   width: 100%;
   min-height: 100vh;
   background-size: cover;
-  background-image: url(../img/Pozadina.png);
+  background-image: url(../img/pozadina.png);
   color: #cecece;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -261,6 +261,7 @@ a {
 #about #column-me .about-me #slika {
   height: 300px;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 #about #column-me .about-me #slika img {
@@ -270,6 +271,7 @@ a {
 
 #about #column-me .about-me span {
   text-align: center;
+  margin-top: 10px;
 }
 
 #about #column-me .about-me span a {
@@ -297,10 +299,10 @@ a {
           justify-content: center;
 }
 
-#about #column-me .about-me .skills #text-fill {
+#about #column-me .about-me .skills .text-fill {
   width: 80px;
   height: inherit;
-  background-color: #008080b0;
+  background-color: #008080;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
   color: #ffff33;
@@ -405,8 +407,8 @@ a {
       justify-content: space-around;
 }
 
-#project .column .slicice {
-  width: 400px;
+#project .column #gore .slicice {
+  width: 500px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -420,19 +422,42 @@ a {
   margin-bottom: 100px;
 }
 
-#project .column .slicice img {
-  width: 350px;
+#project .column #gore .slicice img {
+  width: 450px;
   margin: 0px auto;
 }
 
 #project .column #dole {
-  width: 350px;
-  margin: 0px auto;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-#project .column #dole img {
-  width: inherit;
+#project .column #dole .slicice {
+  width: 500px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+#project .column #dole .slicice img {
+  width: 450px;
   margin: 0px auto;
 }
 
@@ -446,7 +471,7 @@ a {
 
 #contact .naslov h2 {
   margin-top: 80px;
-  margin-bottom: 90px;
+  margin-bottom: 40px;
   font-size: 50px;
   text-align: center;
   font-weight: 700;
@@ -457,22 +482,22 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 500px;
+  margin: 0px auto;
 }
 
 #contact .column .form {
   margin: 0px auto;
-  margin-top: 70px;
+  margin-top: 30px;
+  width: 500px;
 }
 
 #contact .column .form input {
-  width: 500px;
+  width: inherit;
   border-left: 2px solid #008080;
   border-bottom: 2px solid #008080;
   border-right: 2px solid #008080;
@@ -481,10 +506,12 @@ a {
   padding: 3px 0px 3px 10px;
   outline: none;
   font-size: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #contact .column .form textarea {
-  width: 500px;
+  width: inherit;
   height: 90px;
   border-left: 2px solid #008080;
   border-bottom: 2px solid #008080;
@@ -495,6 +522,8 @@ a {
   outline: none;
   resize: none;
   font-size: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #contact .column .btn {
@@ -517,7 +546,16 @@ a {
   color: #008080;
 }
 
-#footer .margin {
+#footer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 70px;
+  margin-bottom: 10px;
+  border-top: 2px solid #008080;
+}
+
+#footer .container {
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -525,16 +563,112 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-#footer .margin i {
-  font-size: 30px;
+#footer .container #mreze {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-#footer .margin i:hover {
+#footer .container #mreze i {
+  font-size: 20px;
+}
+
+#footer .container #mreze i:hover {
   color: #ffff33;
+}
+
+#footer .container #linkovi {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#footer .container #linkovi a:hover {
+  color: #ffff33;
+}
+
+@media screen and (max-width: 1250px) {
+  body #project .container .column #gore .slicice {
+    width: 350px;
+  }
+  body #project .container .column #gore .slicice img {
+    width: 300px;
+  }
+  body #project .container .column #dole .slicice {
+    width: 350px;
+  }
+  body #project .container .column #dole .slicice img {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body #home .container #naslov #naslov-text h1 {
+    font-size: 2em;
+  }
+  body #home .container #naslov h2 {
+    font-size: 1.5em;
+  }
+  body #home .container #naslov #btn-about a {
+    padding: 8px 16px 8px 16px;
+    font-size: 15px;
+  }
+  body #home .container #naslov #btn-about a:after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: "FontAwesome";
+    content: "\f063";
+  }
+  body #home .container #naslov #btn-about a:hover:after {
+    font-family: "FontAwesome";
+    content: "\f063";
+  }
+  body #home .container #naslov #btn-about a:hover {
+    background-color: #252934;
+    border: 1px solid #cecece;
+  }
+  body #container-fluid .container #nav ul li {
+    margin: 0px 5px;
+  }
+  body #about #column-me .about-me {
+    width: 90%;
+  }
+  body #about #column-me .about-me .skills {
+    width: 90%;
+  }
+  body #about #column-me .about-me .skills .text-fill {
+    width: 15%;
+  }
+  body #about #column-me .about-me .skills .fill {
+    width: 70%;
+  }
+  body #contact .column {
+    width: 80% !important;
+  }
+  body #contact .column .form {
+    width: 100% !important;
+  }
 }
 
 #burger {
