@@ -145,6 +145,7 @@ a {
 }
 
 #home #naslov #btn-about a {
+  border-radius: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid;
@@ -870,7 +871,7 @@ a {
     font-size: 20px !important;
   }
   body #footer #linkovi {
-    width: 40%;
+    width: 50% !important;
   }
 }
 
@@ -893,9 +894,6 @@ a {
   }
   body #contact .column p {
     font-size: 16px !important;
-  }
-  body #footer #linkovi {
-    width: 50% !important;
   }
 }
 

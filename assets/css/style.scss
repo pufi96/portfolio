@@ -103,6 +103,7 @@ a {
 			}
 			#btn-about{
 				a{
+					border-radius: 10px;
 					box-sizing: border-box;
 					border: 1px solid;
 					padding: 12px 20px 12px 20px;
@@ -742,7 +743,7 @@ a {
 		}
 		#footer{
 			#linkovi{
-				width: 40%;
+				width: 50% !important;
 			}
 		}
 	}
@@ -790,11 +791,6 @@ a {
 				p{
 					font-size: 16px !important;
 				}
-			}
-		}
-		#footer{
-			#linkovi{
-				width: 50% !important;
 			}
 		}
 	}
