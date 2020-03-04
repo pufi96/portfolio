@@ -491,11 +491,12 @@ a {
 			p{
 				margin-top: 40px;
 				font-size: 25px;
-				box-sizing: border-box;
-				padding-left: 30px;
 				color: #cecece;
 			}
 	
+		}
+		.column:first-of-type{
+			margin-bottom: 70px;
 		}
 	}
 }
@@ -682,15 +683,18 @@ a {
 			}
 		}
 		#contact{
+			.container{
+				width: 90% !important;
 				.column{
-					width: 80% !important;
+					width: 100% !important;
 					.form{
 						width: 100% !important;
 					}
 					p{
-						font-size: 22px !important;
+						font-size: 22px;
 					}
 				}
+			}
 		}
 	}
 }
@@ -710,13 +714,13 @@ a {
 		#contact{
 			.column{
 				p{
-					font-size: 15px !important;
+					font-size: 20px !important;
 				}
 			}
 		}
 		#footer{
 			#linkovi{
-				width: 40% !important;
+				width: 40%;
 			}
 		}
 	}
@@ -762,7 +766,7 @@ a {
 		#contact{
 			.column{
 				p{
-					font-size: 11px !important;
+					font-size: 16px !important;
 				}
 			}
 		}

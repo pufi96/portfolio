@@ -679,10 +679,11 @@ a {
 #contact #kontakt .column p {
   margin-top: 40px;
   font-size: 25px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding-left: 30px;
   color: #cecece;
+}
+
+#contact #kontakt .column:first-of-type {
+  margin-bottom: 70px;
 }
 
 #footer {
@@ -835,14 +836,17 @@ a {
   body #skill .skills {
     width: 90%;
   }
-  body #contact .column {
-    width: 80% !important;
+  body #contact .container {
+    width: 90% !important;
   }
-  body #contact .column .form {
+  body #contact .container .column {
     width: 100% !important;
   }
-  body #contact .column p {
-    font-size: 22px !important;
+  body #contact .container .column .form {
+    width: 100% !important;
+  }
+  body #contact .container .column p {
+    font-size: 22px;
   }
 }
 
@@ -851,10 +855,10 @@ a {
     font-size: 13px;
   }
   body #contact .column p {
-    font-size: 15px !important;
+    font-size: 20px !important;
   }
   body #footer #linkovi {
-    width: 40% !important;
+    width: 40%;
   }
 }
 
@@ -876,7 +880,7 @@ a {
     font-size: 11px;
   }
   body #contact .column p {
-    font-size: 11px !important;
+    font-size: 16px !important;
   }
   body #footer #linkovi {
     width: 50% !important;
