@@ -633,6 +633,28 @@ a {
 
 			}
 		}
+		#about{
+			#info{
+				p{
+					font-size: 20px !important;
+				}
+				a{
+					font-size: 20px !important;
+				}
+			}
+		}
+		#skill{
+			.skills{
+				.text-fill{
+					p{
+						font-size: 20px !important;
+					}
+					i{
+						font-size: 20px !important;
+					}
+				}
+			}
+		}
 	}
 }
 @media screen and (max-width: 600px){
@@ -777,18 +799,6 @@ a {
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
 #burger{
 	color:#cecece;
 	position: fixed;

@@ -803,6 +803,18 @@ a {
   body #container-fluid .container #nav ul li {
     margin: 0px 5px;
   }
+  body #about #info p {
+    font-size: 20px !important;
+  }
+  body #about #info a {
+    font-size: 20px !important;
+  }
+  body #skill .skills .text-fill p {
+    font-size: 20px !important;
+  }
+  body #skill .skills .text-fill i {
+    font-size: 20px !important;
+  }
 }
 
 @media screen and (max-width: 600px) {
