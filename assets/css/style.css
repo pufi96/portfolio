@@ -45,6 +45,7 @@ a {
   border-bottom: 2px solid #008080;
   width: 100%;
   margin-top: -40px;
+  z-index: 200;
 }
 
 #container-fluid #nav {
@@ -173,7 +174,7 @@ a {
           box-sizing: border-box;
   padding-top: 30px;
   min-height: 100vh;
-  background-color: #252934;
+  margin-bottom: 50px;
 }
 
 #about .naslov h2 {
@@ -219,13 +220,12 @@ a {
   border: 20px solid #008080;
   border-radius: 50%;
   background-color: #008080;
-  color: #FFF;
-  margin-bottom: 20px;
   color: #ffff33;
 }
 
 #about .column .slicice .slicice-naslov {
   font-size: 30px;
+  margin-top: 35px;
   margin-bottom: 5px;
   color: #cecece;
 }
@@ -261,7 +261,6 @@ a {
 #about #column-me .about-me #slika {
   height: 300px;
   text-align: center;
-  margin-bottom: 30px;
 }
 
 #about #column-me .about-me #slika img {
@@ -269,54 +268,110 @@ a {
   border-radius: 40px;
 }
 
-#about #column-me .about-me span {
-  text-align: center;
-  margin-top: 10px;
-}
-
-#about #column-me .about-me span a {
-  color: #ffff33;
-  text-align: center;
-}
-
-#about #column-me .about-me span a:hover {
-  color: #008080;
-}
-
-#about #column-me .about-me p {
-  text-align: center;
-}
-
-#about #column-me .about-me .skills {
-  width: 496px;
-  height: 28px;
+#about #column-me .about-me #info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+#about #column-me .about-me #info p {
+  font-size: 25px;
+  text-align: center;
+}
+
+#about #column-me .about-me #info a {
+  margin-top: 20px;
+  color: #ffff33;
+  font-size: 25px;
+}
+
+#about #column-me .about-me #info a:hover {
+  color: #008080;
+}
+
+#skill {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 30px;
+  min-height: 100vh;
+}
+
+#skill .naslov h2 {
+  margin-top: 80px;
+  margin-bottom: 150px;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#skill .skills {
+  width: 60%;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px auto;
+  margin-bottom: 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#about #column-me .about-me .skills .text-fill {
-  width: 80px;
+#skill .skills .text-fill {
+  width: 50%;
   height: inherit;
   background-color: #008080;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
   color: #ffff33;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-#about #column-me .about-me .skills .fill {
-  width: 390px;
+#skill .skills .text-fill i {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: inherit;
+  padding-left: 10px;
+  font-size: 25px;
+  padding-top: 6px;
+}
+
+#skill .skills .text-fill p {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: inherit;
+  padding-left: 10px;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+#skill .skills .fill {
+  width: 50%;
   height: inherit;
   background-color: #cecece;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
 }
 
-#about #column-me .about-me .skills .fill #htmlfill {
+#skill .skills .fill #htmlfill {
   width: 85%;
   height: inherit;
   background-color: #008080;
@@ -324,7 +379,7 @@ a {
   border-top-right-radius: 10px;
 }
 
-#about #column-me .about-me .skills .fill #cssfill {
+#skill .skills .fill #cssfill {
   width: 80%;
   height: inherit;
   background-color: #008080;
@@ -332,15 +387,15 @@ a {
   border-top-right-radius: 10px;
 }
 
-#about #column-me .about-me .skills .fill #jsfill {
-  width: 10%;
+#skill .skills .fill #jsfill {
+  width: 16%;
   height: inherit;
   background-color: #008080;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
 }
 
-#about #column-me .about-me .skills .fill #psfill {
+#skill .skills .fill #psfill {
   width: 40%;
   height: inherit;
   background-color: #008080;
@@ -348,7 +403,7 @@ a {
   border-top-right-radius: 10px;
 }
 
-#about #column-me .about-me .skills .fill #designfill {
+#skill .skills .fill #seofill {
   width: 60%;
   height: inherit;
   background-color: #008080;
@@ -356,7 +411,39 @@ a {
   border-top-right-radius: 10px;
 }
 
-#about #column-me .about-me .skills .text {
+#skill .skills .fill #cfill {
+  width: 47%;
+  height: inherit;
+  background-color: #008080;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#skill .skills .fill #ccfill {
+  width: 36%;
+  height: inherit;
+  background-color: #008080;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#skill .skills .fill #sassfill {
+  width: 100%;
+  height: inherit;
+  background-color: #008080;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#skill .skills .fill #sqlfill {
+  width: 10%;
+  height: inherit;
+  background-color: #008080;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#skill .skills .text {
   height: inherit;
   text-align: right;
   background-color: #cecece;
@@ -370,7 +457,6 @@ a {
           box-sizing: border-box;
   padding-top: 30px;
   min-height: 100vh;
-  background-color: #252934;
 }
 
 #project .naslov h2 {
@@ -394,9 +480,11 @@ a {
 }
 
 #project .column #gore {
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0px auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-orient: horizontal;
@@ -408,7 +496,7 @@ a {
 }
 
 #project .column #gore .slicice {
-  width: 500px;
+  width: 550px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -425,12 +513,31 @@ a {
 #project .column #gore .slicice img {
   width: 450px;
   margin: 0px auto;
+  border-radius: 15px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 2;
+}
+
+#project .column #gore .slicice img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#project .column #gore .slicice p {
+  font-size: 19px;
 }
 
 #project .column #dole {
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0px auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-orient: horizontal;
@@ -442,7 +549,7 @@ a {
 }
 
 #project .column #dole .slicice {
-  width: 500px;
+  width: 550px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -459,6 +566,22 @@ a {
 #project .column #dole .slicice img {
   width: 450px;
   margin: 0px auto;
+  border-radius: 15px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#project .column #dole .slicice img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#project .column #dole .slicice p {
+  font-size: 19px;
 }
 
 #contact {
@@ -471,14 +594,22 @@ a {
 
 #contact .naslov h2 {
   margin-top: 80px;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
   font-size: 50px;
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-#contact .column {
+#contact #kontakt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#contact #kontakt .column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -490,13 +621,12 @@ a {
   margin: 0px auto;
 }
 
-#contact .column .form {
-  margin: 0px auto;
+#contact #kontakt .column .form {
   margin-top: 30px;
-  width: 500px;
+  width: 450px;
 }
 
-#contact .column .form input {
+#contact #kontakt .column .form input {
   width: inherit;
   border-left: 2px solid #008080;
   border-bottom: 2px solid #008080;
@@ -510,7 +640,7 @@ a {
           box-sizing: border-box;
 }
 
-#contact .column .form textarea {
+#contact #kontakt .column .form textarea {
   width: inherit;
   height: 90px;
   border-left: 2px solid #008080;
@@ -526,12 +656,12 @@ a {
           box-sizing: border-box;
 }
 
-#contact .column .btn {
+#contact #kontakt .column .btn {
   margin: 0px auto;
   margin-top: 70px;
 }
 
-#contact .column .btn input {
+#contact #kontakt .column .btn input {
   border: 2px solid #008080;
   border-radius: 10px;
   outline: none;
@@ -541,9 +671,18 @@ a {
   color: #252934;
 }
 
-#contact .column .btn input:hover {
+#contact #kontakt .column .btn input:hover {
   background-color: #252934;
   color: #008080;
+}
+
+#contact #kontakt .column p {
+  margin-top: 40px;
+  font-size: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 30px;
+  color: #cecece;
 }
 
 #footer {
@@ -608,6 +747,42 @@ a {
   color: #ffff33;
 }
 
+@media screen and (max-width: 1720px) {
+  body #project .container .column #gore .slicice {
+    width: 450px;
+  }
+  body #project .container .column #gore .slicice img {
+    width: 400px;
+  }
+  body #project .container .column #dole .slicice {
+    width: 450px;
+  }
+  body #project .container .column #dole .slicice img {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 1420px) {
+  body #project .container .column #gore .slicice {
+    width: 400px;
+  }
+  body #project .container .column #gore .slicice img {
+    width: 350px;
+  }
+  body #project .container .column #dole .slicice {
+    width: 400px;
+  }
+  body #project .container .column #dole .slicice img {
+    width: 350px;
+  }
+  body #contact .column {
+    width: 400px !important;
+  }
+  body #contact .column .form {
+    width: 400px !important;
+  }
+}
+
 @media screen and (max-width: 1250px) {
   body #project .container .column #gore .slicice {
     width: 350px;
@@ -620,6 +795,12 @@ a {
   }
   body #project .container .column #dole .slicice img {
     width: 300px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  body #container-fluid .container #nav ul li {
+    margin: 0px 5px;
   }
 }
 
@@ -648,26 +829,57 @@ a {
     background-color: #252934;
     border: 1px solid #cecece;
   }
-  body #container-fluid .container #nav ul li {
-    margin: 0px 5px;
-  }
   body #about #column-me .about-me {
     width: 90%;
   }
-  body #about #column-me .about-me .skills {
+  body #skill .skills {
     width: 90%;
-  }
-  body #about #column-me .about-me .skills .text-fill {
-    width: 15%;
-  }
-  body #about #column-me .about-me .skills .fill {
-    width: 70%;
   }
   body #contact .column {
     width: 80% !important;
   }
   body #contact .column .form {
     width: 100% !important;
+  }
+  body #contact .column p {
+    font-size: 22px !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  body #container-fluid .container #nav ul li {
+    font-size: 13px;
+  }
+  body #contact .column p {
+    font-size: 15px !important;
+  }
+  body #footer #linkovi {
+    width: 40% !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body #project .container .column #gore .slicice {
+    width: 300px;
+  }
+  body #project .container .column #gore .slicice img {
+    width: 250px;
+  }
+  body #project .container .column #dole .slicice {
+    width: 300px;
+  }
+  body #project .container .column #dole .slicice img {
+    width: 250px;
+  }
+  body #container-fluid .container #nav ul li {
+    margin: 0px 1px;
+    font-size: 11px;
+  }
+  body #contact .column p {
+    font-size: 11px !important;
+  }
+  body #footer #linkovi {
+    width: 50% !important;
   }
 }
 

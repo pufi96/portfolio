@@ -41,6 +41,10 @@ $(document).ready(function () {
             linkId: "about"
         },
         {
+            el: document.getElementById("skill"),
+            linkId: "skill"
+        },
+        {
             el: document.getElementById("project"),
             linkId: "project"
         },

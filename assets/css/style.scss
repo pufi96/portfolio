@@ -37,6 +37,7 @@ a {
 	border-bottom: 2px solid #008080;
 	width: 100%;
 	margin-top: -40px;
+	z-index: 200;
 	#nav{
 		height: 24px;
 		padding-top: 10px;
@@ -127,7 +128,7 @@ a {
 	box-sizing: border-box;
 	padding-top: 30px;
 	min-height: 100vh;
-	background-color: #252934;
+	margin-bottom: 50px;
 	.naslov{
 		h2{
 			margin-top: 80px;
@@ -157,12 +158,11 @@ a {
 				border: 20px solid #008080;
 				border-radius: 50%;
 				background-color: #008080;
-				color: #FFF;
-				margin-bottom: 20px;
 				color: #ffff33;
 			}
 			.slicice-naslov{
 				font-size: 30px;
+				margin-top: 35px;
 				margin-bottom: 5px;
 				color: #cecece;
 			}
@@ -181,95 +181,159 @@ a {
 			margin-top: 90px;
 			display: flex;
 			flex-direction: column;
-			
 			#slika{
 				height: 300px;
 				text-align: center;
-				margin-bottom: 30px;
 				img{
 					height: 300px;
 					border-radius: 40px;
 				}
 			}
-			span{
-				text-align: center;
-				margin-top: 10px;
+			#info{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-top: 20px;
+				p{
+					font-size: 25px;
+					text-align: center;
+					
+				}
 				a{
-				color: #ffff33;
-				text-align: center;
+					margin-top: 20px;
+					color: #ffff33;
+					font-size: 25px;
 				}
 				a:hover{
 					color: #008080;
 				}
 			}
+		}
+	}
+}
+#skill{
+	box-sizing: border-box;
+	padding-top: 30px;
+	min-height: 100vh;
+	.naslov{
+		h2{
+			margin-top: 80px;
+			margin-bottom: 150px;
+			font-size: 50px;
+			text-align: center;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+	}
+	.skills{
+		width: 60%;
+		height: 35px;
+		display: flex;
+		margin: 0px auto;
+		margin-bottom: 30px;
+		justify-content: center;
+		align-items: center;
+		.text-fill{
+			width: 50%;
+			height: inherit;
+			background-color: #008080;
+			border-bottom-left-radius: 10px;
+			border-top-left-radius: 10px;
+			color: #ffff33;
+			display: flex;
+			flex-direction: row;
+			i{
+				box-sizing: border-box;
+				height: inherit;
+				padding-left: 10px;
+				font-size: 25px;
+				padding-top: 6px;
+			}
 			p{
-				text-align: center;
+				box-sizing: border-box;
+				height: inherit;
+				padding-left: 10px;
+				font-size: 25px;
+				font-weight: 900;
 			}
-			.skills{
-				width: 496px;
-				height: 28px;
-				display: flex;
-				margin-bottom: 20px;
-				justify-content: center;
-				.text-fill{
-					width: 80px;
-					height: inherit;
-					background-color: #008080;
-					border-bottom-left-radius: 10px;
-					border-top-left-radius: 10px;
-					color: #ffff33;
-				}
-				.fill{
-					width: 390px;
-					height: inherit;
-					background-color: #cecece;
-					border-bottom-right-radius: 10px;
-					border-top-right-radius: 10px;
-					#htmlfill{
-						width: 85%;
-						height: inherit;
-						background-color: #008080;
-						border-bottom-right-radius: 10px;
-						border-top-right-radius: 10px;
-					}
-					#cssfill{
-						width: 80%;
-						height: inherit;
-						background-color: #008080;
-						border-bottom-right-radius: 10px;
-						border-top-right-radius: 10px;
-					}
-					#jsfill{
-						width: 10%;
-						height: inherit;
-						background-color: #008080;
-						border-bottom-right-radius: 10px;
-						border-top-right-radius: 10px;
-					}
-					#psfill{
-						width: 40%;
-						height: inherit;
-						background-color: #008080;
-						border-bottom-right-radius: 10px;
-						border-top-right-radius: 10px;
-					}
-					#designfill{
-						width: 60%;
-						height: inherit;
-						background-color: #008080;
-						border-bottom-right-radius: 10px;
-						border-top-right-radius: 10px;
-					}
-				}
-				.text{
-					height: inherit;
-					text-align: right;
-					background-color: #cecece;
-					padding-right: 2%;
-					border-bottom-right-radius: 10px;
-					border-top-right-radius: 10px;
-				}
+		}
+		.fill{
+			width: 50%;
+			height: inherit;
+			background-color: #cecece;
+			border-bottom-right-radius: 10px;
+			border-top-right-radius: 10px;
+			#htmlfill{
+				width: 85%;
+				height: inherit;
+				background-color: #008080;
+				border-bottom-right-radius: 10px;
+				border-top-right-radius: 10px;
 			}
+			#cssfill{
+				width: 80%;
+				height: inherit;
+				background-color: #008080;
+				border-bottom-right-radius: 10px;
+				border-top-right-radius: 10px;
+			}
+			#jsfill{
+				width: 16%;
+				height: inherit;
+				background-color: #008080;
+				border-bottom-right-radius: 10px;
+				border-top-right-radius: 10px;
+			}
+			#psfill{
+				width: 40%;
+				height: inherit;
+				background-color: #008080;
+				border-bottom-right-radius: 10px;
+				border-top-right-radius: 10px;
+			}
+			#seofill{
+				width: 60%;
+				height: inherit;
+				background-color: #008080;
+				border-bottom-right-radius: 10px;
+				border-top-right-radius: 10px;
+			}
+			#cfill{
+				width: 47%;
+				height: inherit;
+				background-color: #008080;
+				border-bottom-right-radius: 10px;
+				border-top-right-radius: 10px;
+			}
+			#ccfill{
+				width: 36%;
+				height: inherit;
+				background-color: #008080;
+				border-bottom-right-radius: 10px;
+				border-top-right-radius: 10px;
+			}
+			#sassfill{
+				width: 100%;
+				height: inherit;
+				background-color: #008080;
+				border-bottom-right-radius: 10px;
+				border-top-right-radius: 10px;
+			}
+			#sqlfill{
+				width: 10%;
+				height: inherit;
+				background-color: #008080;
+				border-bottom-right-radius: 10px;
+				border-top-right-radius: 10px;
+			}
+		}
+		.text{
+			height: inherit;
+			text-align: right;
+			background-color: #cecece;
+			padding-right: 2%;
+			border-bottom-right-radius: 10px;
+			border-top-right-radius: 10px;
 		}
 	}
 }
@@ -277,7 +341,6 @@ a {
 	box-sizing: border-box;
 	padding-top: 30px;
 	min-height: 100vh;
-	background-color: #252934;
 	.naslov{
 		h2{
 			margin-top: 80px;
@@ -293,12 +356,14 @@ a {
 		flex-direction: column;
 		color: #ffff33;
 		#gore{
+			width: 80%;
 			display: flex;
+			margin: 0px auto;
 			flex-wrap: wrap;
 			flex-direction: row;
 			justify-content: space-around;
 			.slicice{
-				width: 500px;
+				width: 550px;
 				text-align: center;
 				display: flex;
 				flex-direction: column;
@@ -307,25 +372,47 @@ a {
 				img{
 					width: 450px;
 					margin: 0px auto;
+					border-radius: 15px;
+					transform: scale(1);
+					transition: 1s;
+					z-index: 2;
+				}
+				img:hover{
+					transform: scale(1.5);
+					transition: 1s;
+				}
+				p{
+					font-size: 19px;
 				}
 			}
 		}
 		#dole{
+			width: 80%;
 			display: flex;
+			margin: 0px auto;
 			flex-wrap: wrap;
 			flex-direction: row;
 			justify-content: space-around;
 			.slicice{
-				width: 500px;
+				width: 550px;
 				text-align: center;
 				display: flex;
 				flex-direction: column;
 				flex-wrap: wrap;
 				margin-bottom: 100px;
-				
 				img{
 					width: 450px;
 					margin: 0px auto;
+					border-radius: 15px;
+					transform: scale(1);
+					transition: 1s;
+				}
+				img:hover{
+					transform: scale(1.5);
+					transition: 1s;
+				}
+				p{
+					font-size: 19px;
 				}
 			}
 		}
@@ -339,67 +426,77 @@ a {
 	.naslov{
 		h2{
 			margin-top: 80px;
-			margin-bottom: 40px;
+			margin-bottom: 100px;
 			font-size: 50px;
 			text-align: center;
 			font-weight: 700;
 			text-transform: uppercase;
 		}
 	}
-	.column{
+	#kontakt{
 		display: flex;
-		flex-direction: column;
-		width: 500px;
-		margin: 0px auto;
-		.form{
-			margin: 0px auto;
-			margin-top: 30px;
+		flex-wrap: wrap;
+		.column{
+			display: flex;
+			flex-direction: column;
 			width: 500px;
-			input{
-				width: inherit;
-				border-left: 2px solid #008080;
-				border-bottom: 2px solid #008080;
-				border-right: 2px solid #008080;
-				border-top: none;
-				border-radius: 10px;
-				padding: 3px 0px 3px 10px;
-				outline: none;
-				font-size: 20px;
-				box-sizing: border-box;
-			}
-			textarea{
-				width: inherit;
-				height: 90px;
-				border-left: 2px solid #008080;
-				border-bottom: 2px solid #008080;
-				border-right: 2px solid #008080;
-				border-top: none;
-				border-radius: 10px;
-				padding: 3px 0px 3px 10px;
-				outline: none;
-				resize: none;
-				font-size: 20px;
-				box-sizing: border-box;
-			}
-		}
-		.btn{
 			margin: 0px auto;
-			margin-top: 70px;
-			input{
-				border: 2px solid #008080;
-				border-radius: 10px;
-				outline: none;
-				font-size: 20px;
-				padding: 3px 5px;
-				cursor: pointer;
-				color: #252934;
+			.form{
+				margin-top: 30px;
+				width: 450px;
+				input{
+					width: inherit;
+					border-left: 2px solid #008080;
+					border-bottom: 2px solid #008080;
+					border-right: 2px solid #008080;
+					border-top: none;
+					border-radius: 10px;
+					padding: 3px 0px 3px 10px;
+					outline: none;
+					font-size: 20px;
+					box-sizing: border-box;
+				}
+				textarea{
+					width: inherit;
+					height: 90px;
+					border-left: 2px solid #008080;
+					border-bottom: 2px solid #008080;
+					border-right: 2px solid #008080;
+					border-top: none;
+					border-radius: 10px;
+					padding: 3px 0px 3px 10px;
+					outline: none;
+					resize: none;
+					font-size: 20px;
+					box-sizing: border-box;
+				}
 			}
-			input:hover{
-				background-color: #252934;
-				color: #008080;
+			.btn{
+				margin: 0px auto;
+				margin-top: 70px;
+				input{
+					border: 2px solid #008080;
+					border-radius: 10px;
+					outline: none;
+					font-size: 20px;
+					padding: 3px 5px;
+					cursor: pointer;
+					color: #252934;
+				}
+				input:hover{
+					background-color: #252934;
+					color: #008080;
+				}
 			}
+			p{
+				margin-top: 40px;
+				font-size: 25px;
+				box-sizing: border-box;
+				padding-left: 30px;
+				color: #cecece;
+			}
+	
 		}
-
 	}
 }
 #footer{
@@ -435,6 +532,66 @@ a {
 		}
 	}
 }
+@media screen and (max-width: 1720px){
+	body{
+		#project{
+			.container{
+				.column{
+					#gore{
+						.slicice{
+							width: 450px;
+							img{
+								width: 400px;
+							}
+						}
+					}
+					#dole{
+						.slicice{
+							width: 450px;
+							img{
+								width: 400px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1420px){
+	body{
+		#project{
+			.container{
+				.column{
+					#gore{
+						.slicice{
+							width: 400px;
+							img{
+								width: 350px;
+							}
+						}
+					}
+					#dole{
+						.slicice{
+							width: 400px;
+							img{
+								width: 350px;
+							}
+						}
+					}
+				}
+			}
+		}
+		#contact{
+			.column{
+				width: 400px !important;
+					.form{
+						width: 400px !important;
+					}
+			}
+		}
+	}
+}
 @media screen and (max-width: 1250px){
 	body{
 		#project{
@@ -457,6 +614,22 @@ a {
 						}
 					}
 				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 720px){
+	body{
+		#container-fluid{
+			.container{
+				#nav{
+					ul{
+						li{
+							margin: 0px 5px;
+						}
+					}
+				}
+
 			}
 		}
 	}
@@ -496,32 +669,16 @@ a {
 				}
 			}
 		}
-		#container-fluid{
-			.container{
-				#nav{
-					ul{
-						li{
-							margin: 0px 5px;
-						}
-					}
-				}
-
-			}
-		}
 		#about{
 			#column-me{
 				.about-me{
 					width: 90%; 
-					.skills{
-						width: 90%;
-						.text-fill{
-							width: 15%;
-						}
-						.fill{
-							width: 70%;
-						}
-					}
 				}
+			}
+		}
+		#skill{
+			.skills{
+				width: 90%;
 			}
 		}
 		#contact{
@@ -530,11 +687,92 @@ a {
 					.form{
 						width: 100% !important;
 					}
+					p{
+						font-size: 22px !important;
+					}
 				}
 		}
 	}
 }
+@media screen and (max-width: 550px){
+	body{
+		#container-fluid{
+			.container{
+				#nav{
+					ul{
+						li{
+							font-size: 13px;
+						}
+					}
+				}
+			}
+		}
+		#contact{
+			.column{
+				p{
+					font-size: 15px !important;
+				}
+			}
+		}
+		#footer{
+			#linkovi{
+				width: 40% !important;
+			}
+		}
+	}
+}
 
+@media screen and (max-width: 400px){
+	body{
+		#project{
+			.container{
+				.column{
+					#gore{
+						.slicice{
+							width: 300px;
+							img{
+								width: 250px;
+							}
+						}
+					}
+					#dole{
+						.slicice{
+							width: 300px;
+							img{
+								width: 250px;
+							}
+						}
+					}
+				}
+			}
+		}
+		#container-fluid{
+			.container{
+				#nav{
+					ul{
+						li{
+							margin: 0px 1px;
+							font-size: 11px;
+						}
+					}
+				}
+
+			}
+		}
+		#contact{
+			.column{
+				p{
+					font-size: 11px !important;
+				}
+			}
+		}
+		#footer{
+			#linkovi{
+				width: 50% !important;
+			}
+		}
+	}
+}
 
 
 
