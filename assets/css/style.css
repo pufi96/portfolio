@@ -786,6 +786,9 @@ a {
 }
 
 @media screen and (max-width: 1250px) {
+  body #container-fluid .container #nav ul li {
+    margin: 0px 15px;
+  }
   body #project .container .column #gore .slicice {
     width: 350px;
   }
