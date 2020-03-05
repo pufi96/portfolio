@@ -562,6 +562,18 @@ a {
 }
 @media screen and (max-width: 1420px){
 	body{
+		#container-fluid{
+			.container{
+				#nav{
+					ul{
+						li{
+							margin: 0px 15px;
+						}
+					}
+				}
+
+			}
+		}
 		#project{
 			.container{
 				.column{
@@ -595,7 +607,7 @@ a {
 	}
 }
 @media screen and (max-width: 1250px){
-	body{
+	body{	
 		#project{
 			.container{
 				.column{
