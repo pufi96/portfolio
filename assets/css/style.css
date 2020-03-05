@@ -805,7 +805,7 @@ a {
 
 @media screen and (max-width: 720px) {
   body #container-fluid .container #nav ul li {
-    margin: 0px 5px;
+    margin: 0px 4px;
   }
   body #about #info p {
     font-size: 20px !important;
