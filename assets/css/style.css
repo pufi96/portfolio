@@ -697,6 +697,7 @@ a {
   padding: 3px 5px;
   cursor: pointer;
   color: #252934;
+  background-color: #cecece;
 }
 
 #contact #kontakt .column .btn input:hover {
