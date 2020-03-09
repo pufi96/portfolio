@@ -647,12 +647,28 @@ a {
   margin: 0px auto;
 }
 
-#contact #kontakt .column .form {
-  margin-top: 30px;
+#contact #kontakt .column .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 450px;
 }
 
-#contact #kontakt .column .form input {
+#contact #kontakt .column .form-group .form {
+  width: inherit;
+  margin-top: 30px;
+}
+
+#contact #kontakt .column .form-group .form input {
   width: inherit;
   border-left: 2px solid #008080;
   border-bottom: 2px solid #008080;
@@ -667,7 +683,7 @@ a {
   background-color: #cecece;
 }
 
-#contact #kontakt .column .form textarea {
+#contact #kontakt .column .form-group .form textarea {
   width: inherit;
   height: 90px;
   border-left: 2px solid #008080;
@@ -682,6 +698,10 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #cecece;
+}
+
+#contact #kontakt .column .form-group .pola {
+  width: 220px;
 }
 
 #contact #kontakt .column .btn {
@@ -808,8 +828,11 @@ a {
   body #contact .column {
     width: 400px !important;
   }
-  body #contact .column .form {
+  body #contact .column .form-group {
     width: 400px !important;
+  }
+  body #contact .column .form-group .pola {
+    width: 190px !important;
   }
 }
 
@@ -897,7 +920,10 @@ a {
   body #contact .container .column {
     width: 100% !important;
   }
-  body #contact .container .column .form {
+  body #contact .container .column .form-group {
+    width: 100% !important;
+  }
+  body #contact .container .column .form-group .pola {
     width: 100% !important;
   }
   body #contact .container .column p {

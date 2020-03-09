@@ -444,36 +444,46 @@ a {
 			flex-direction: column;
 			width: 500px;
 			margin: 0px auto;
-			.form{
-				margin-top: 30px;
+			.form-group{
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-between;
 				width: 450px;
-				input{
+				.form{
 					width: inherit;
-					border-left: 2px solid #008080;
-					border-bottom: 2px solid #008080;
-					border-right: 2px solid #008080;
-					border-top: none;
-					border-radius: 10px;
-					padding: 3px 0px 3px 10px;
-					outline: none;
-					font-size: 20px;
-					box-sizing: border-box;
-					background-color: #cecece;
+					margin-top: 30px;
+					input{
+						width: inherit;
+						border-left: 2px solid #008080;
+						border-bottom: 2px solid #008080;
+						border-right: 2px solid #008080;
+						border-top: none;
+						border-radius: 10px;
+						padding: 3px 0px 3px 10px;
+						outline: none;
+						font-size: 20px;
+						box-sizing: border-box;
+						background-color: #cecece;
+					}
+					textarea{
+						width: inherit;
+						height: 90px;
+						border-left: 2px solid #008080;
+						border-bottom: 2px solid #008080;
+						border-right: 2px solid #008080;
+						border-top: none;
+						border-radius: 10px;
+						padding: 3px 0px 3px 10px;
+						outline: none;
+						resize: none;
+						font-size: 20px;
+						box-sizing: border-box;
+						background-color: #cecece;
+					}
 				}
-				textarea{
-					width: inherit;
-					height: 90px;
-					border-left: 2px solid #008080;
-					border-bottom: 2px solid #008080;
-					border-right: 2px solid #008080;
-					border-top: none;
-					border-radius: 10px;
-					padding: 3px 0px 3px 10px;
-					outline: none;
-					resize: none;
-					font-size: 20px;
-					box-sizing: border-box;
-					background-color: #cecece;
+				.pola{
+					width: 220px;
 				}
 			}
 			.btn{
@@ -592,8 +602,11 @@ a {
 		#contact{
 			.column{
 				width: 400px !important;
-					.form{
+					.form-group{
 						width: 400px !important;
+						.pola{
+							width: 190px !important;
+						}
 					}
 			}
 		}
@@ -742,8 +755,12 @@ a {
 				width: 90% !important;
 				.column{
 					width: 100% !important;
-					.form{
+					.form-group{
 						width: 100% !important;
+						.pola{
+							width: 100% !important;
+						}
+						
 					}
 					p{
 						font-size: 22px;
