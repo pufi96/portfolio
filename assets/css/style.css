@@ -464,6 +464,7 @@ a {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  height: 214px;
 }
 
 #skill #skill-g #skill-d .column .gore .slicice, #skill #skill-g #skill-d .column .sredina .slicice, #skill #skill-g #skill-d .column .dole .slicice {
@@ -857,6 +858,9 @@ a {
   body #home #btn-about a:hover {
     background-color: #252934;
     border: 1px solid #cecece;
+  }
+  body #skill .gore, body #skill .sredina, body #skill .dole {
+    height: initial !important;
   }
   body #project .container .column .gore .slicice {
     width: 350px;

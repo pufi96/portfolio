@@ -321,6 +321,7 @@ a {
 					flex-direction: row;
 					justify-content: space-around;
 					flex-wrap: wrap;
+					height: 214px;
 					.slicice{
 						width: 40%;
 						text-align: center;
@@ -643,6 +644,11 @@ a {
 					background-color: #252934;
 					border: 1px solid #cecece;
 				}
+			}
+		}
+		#skill{
+			.gore, .sredina, .dole{
+				height: initial !important;
 			}
 		}
 		#project{
