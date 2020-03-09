@@ -40,6 +40,10 @@ a {
   margin-top: -40px;
 }
 
+.colorT {
+  color: #ffff33;
+}
+
 #container-fluid {
   background-color: #252934;
   border-bottom: 2px solid #008080;
@@ -280,7 +284,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 #about #column-me .about-me #info p {
@@ -292,6 +296,7 @@ a {
   margin-top: 20px;
   color: #ffff33;
   font-size: 25px;
+  text-align: center;
 }
 
 #about #column-me .about-me #info a:hover {
@@ -314,28 +319,43 @@ a {
   text-transform: uppercase;
 }
 
-#skill .skills {
-  width: 60%;
+#skill #skill-g {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#skill #skill-g #skill-l {
+  width: 496px;
+}
+
+#skill #skill-g #skill-l .skills {
+  width: 100%;
   height: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0px auto;
   margin-bottom: 30px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  background-color: #cecece;
+  border-radius: 15px;
 }
 
-#skill .skills .text-fill {
-  width: 50%;
+#skill #skill-g #skill-l .skills .text-fill {
   height: inherit;
   background-color: #008080;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
+  border-radius: 15px;
   color: #ffff33;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -344,9 +364,11 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
-#skill .skills .text-fill i {
+#skill #skill-g #skill-l .skills .text-fill i {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: inherit;
@@ -355,102 +377,125 @@ a {
   padding-top: 6px;
 }
 
-#skill .skills .text-fill p {
+#skill #skill-g #skill-l .skills .text-fill p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: inherit;
-  padding-left: 10px;
+  padding-left: 5px;
   font-size: 25px;
-  font-weight: 900;
 }
 
-#skill .skills .fill {
-  width: 50%;
-  height: inherit;
-  background-color: #cecece;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-#skill .skills .fill #htmlfill {
-  width: 85%;
-  height: inherit;
-  background-color: #008080;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-#skill .skills .fill #cssfill {
-  width: 80%;
-  height: inherit;
-  background-color: #008080;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-#skill .skills .fill #jsfill {
-  width: 16%;
-  height: inherit;
-  background-color: #008080;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-#skill .skills .fill #psfill {
-  width: 40%;
-  height: inherit;
-  background-color: #008080;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-#skill .skills .fill #seofill {
-  width: 60%;
-  height: inherit;
-  background-color: #008080;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-#skill .skills .fill #cfill {
-  width: 47%;
-  height: inherit;
-  background-color: #008080;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-#skill .skills .fill #ccfill {
-  width: 36%;
-  height: inherit;
-  background-color: #008080;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-#skill .skills .fill #sassfill {
+#skill #skill-g #skill-l .skills #htmlfill {
   width: 100%;
-  height: inherit;
-  background-color: #008080;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
 }
 
-#skill .skills .fill #sqlfill {
-  width: 10%;
-  height: inherit;
-  background-color: #008080;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
+#skill #skill-g #skill-l .skills #cssfill {
+  width: 95%;
 }
 
-#skill .skills .text {
+#skill #skill-g #skill-l .skills #jsfill {
+  width: 30%;
+}
+
+#skill #skill-g #skill-l .skills #psfill {
+  width: 40%;
+}
+
+#skill #skill-g #skill-l .skills #cfill {
+  width: 47%;
+}
+
+#skill #skill-g #skill-l .skills #seofill {
+  width: 80%;
+}
+
+#skill #skill-g #skill-l .skills #bsfill {
+  width: 76%;
+}
+
+#skill #skill-g #skill-l .skills #mtfill {
+  width: 69%;
+}
+
+#skill #skill-g #skill-l .skills #sassfill {
+  width: 47%;
+}
+
+#skill #skill-g #skill-l .skills #sqlfill {
+  width: 50%;
+}
+
+#skill #skill-g #skill-l .skills .text {
   height: inherit;
   text-align: right;
   background-color: #cecece;
   padding-right: 2%;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+#skill #skill-g #skill-d {
+  width: 496px;
+}
+
+#skill #skill-g #skill-d .column {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#skill #skill-g #skill-d .column .gore, #skill #skill-g #skill-d .column .sredina, #skill #skill-g #skill-d .column .dole {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#skill #skill-g #skill-d .column .gore .slicice, #skill #skill-g #skill-d .column .sredina .slicice, #skill #skill-g #skill-d .column .dole .slicice {
+  width: 40%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#skill #skill-g #skill-d .column .gore .slicice span, #skill #skill-g #skill-d .column .sredina .slicice span, #skill #skill-g #skill-d .column .dole .slicice span {
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  border: 20px solid #008080;
+  border-radius: 50%;
+  background-color: #008080;
+  color: #ffff33;
+}
+
+#skill #skill-g #skill-d .column .gore .slicice .slicice-text, #skill #skill-g #skill-d .column .sredina .slicice .slicice-text, #skill #skill-g #skill-d .column .dole .slicice .slicice-text {
+  font-size: 20px;
+  margin-top: 30px;
+  color: #cecece;
+  text-transform: uppercase;
 }
 
 #project {
@@ -480,7 +525,7 @@ a {
   color: #ffff33;
 }
 
-#project .column #gore {
+#project .column .gore {
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -496,7 +541,7 @@ a {
       justify-content: space-around;
 }
 
-#project .column #gore .slicice {
+#project .column .gore .slicice {
   width: 550px;
   text-align: center;
   display: -webkit-box;
@@ -511,29 +556,19 @@ a {
   margin-bottom: 100px;
 }
 
-#project .column #gore .slicice img {
+#project .column .gore .slicice img {
   width: 450px;
   margin: 0px auto;
   border-radius: 15px;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: 1s;
-  transition: 1s;
   z-index: 2;
+  border: 2px solid #008080;
 }
 
-#project .column #gore .slicice img:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-#project .column #gore .slicice p {
+#project .column .gore .slicice p {
   font-size: 19px;
 }
 
-#project .column #dole {
+#project .column .dole {
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -549,7 +584,7 @@ a {
       justify-content: space-around;
 }
 
-#project .column #dole .slicice {
+#project .column .dole .slicice {
   width: 550px;
   text-align: center;
   display: -webkit-box;
@@ -564,24 +599,14 @@ a {
   margin-bottom: 100px;
 }
 
-#project .column #dole .slicice img {
+#project .column .dole .slicice img {
   width: 450px;
   margin: 0px auto;
   border-radius: 15px;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: 1s;
-  transition: 1s;
+  border: 2px solid #008080;
 }
 
-#project .column #dole .slicice img:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-#project .column #dole .slicice p {
+#project .column .dole .slicice p {
   font-size: 19px;
 }
 
@@ -750,31 +775,31 @@ a {
 }
 
 @media screen and (max-width: 1720px) {
-  body #project .container .column #gore .slicice {
+  body #project .container .column .gore .slicice {
     width: 450px;
   }
-  body #project .container .column #gore .slicice img {
+  body #project .container .column .gore .slicice img {
     width: 400px;
   }
-  body #project .container .column #dole .slicice {
+  body #project .container .column .dole .slicice {
     width: 450px;
   }
-  body #project .container .column #dole .slicice img {
+  body #project .container .column .dole .slicice img {
     width: 400px;
   }
 }
 
 @media screen and (max-width: 1420px) {
-  body #project .container .column #gore .slicice {
+  body #project .container .column .gore .slicice {
     width: 400px;
   }
-  body #project .container .column #gore .slicice img {
+  body #project .container .column .gore .slicice img {
     width: 350px;
   }
-  body #project .container .column #dole .slicice {
+  body #project .container .column .dole .slicice {
     width: 400px;
   }
-  body #project .container .column #dole .slicice img {
+  body #project .container .column .dole .slicice img {
     width: 350px;
   }
   body #contact .column {
@@ -789,21 +814,42 @@ a {
   body #container-fluid .container #nav ul li {
     margin: 0px 15px;
   }
-  body #project .container .column #gore .slicice {
+  body #home #btn-about a {
+    padding: 8px 16px 8px 16px;
+    font-size: 15px;
+  }
+  body #home #btn-about a:after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: "FontAwesome";
+    content: "\f063";
+  }
+  body #home #btn-about a:hover:after {
+    font-family: "FontAwesome";
+    content: "\f063";
+  }
+  body #home #btn-about a:hover {
+    background-color: #252934;
+    border: 1px solid #cecece;
+  }
+  body #project .container .column .gore .slicice {
     width: 350px;
   }
-  body #project .container .column #gore .slicice img {
+  body #project .container .column .gore .slicice img {
     width: 300px;
   }
-  body #project .container .column #dole .slicice {
+  body #project .container .column .dole .slicice {
     width: 350px;
   }
-  body #project .container .column #dole .slicice img {
+  body #project .container .column .dole .slicice img {
     width: 300px;
   }
 }
 
 @media screen and (max-width: 720px) {
+  body #container-fluid .container #nav a:hover {
+    color: none;
+  }
   body #container-fluid .container #nav ul li {
     margin: 0px 4px;
   }
@@ -814,6 +860,7 @@ a {
     font-size: 20px !important;
   }
   body #skill .skills .text-fill p {
+    padding-top: 2px;
     font-size: 20px !important;
   }
   body #skill .skills .text-fill i {
@@ -828,29 +875,18 @@ a {
   body #home .container #naslov h2 {
     font-size: 1.5em;
   }
-  body #home .container #naslov #btn-about a {
-    padding: 8px 16px 8px 16px;
-    font-size: 15px;
-  }
-  body #home .container #naslov #btn-about a:after {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    font-family: "FontAwesome";
-    content: "\f063";
-  }
-  body #home .container #naslov #btn-about a:hover:after {
-    font-family: "FontAwesome";
-    content: "\f063";
-  }
-  body #home .container #naslov #btn-about a:hover {
-    background-color: #252934;
-    border: 1px solid #cecece;
-  }
   body #about #column-me .about-me {
     width: 90%;
   }
   body #skill .skills {
     width: 90%;
+  }
+  body #skill .skills .text-fill p {
+    padding-top: 3px;
+    font-size: 17px !important;
+  }
+  body #skill .skills .text-fill i {
+    font-size: 17px !important;
   }
   body #contact .container {
     width: 90% !important;
@@ -870,6 +906,9 @@ a {
   body #container-fluid .container #nav ul li {
     font-size: 13px;
   }
+  body #skill .gore .slicice, body #skill .sredina .slicice, body #skill .dole .slicice {
+    width: 90% !important;
+  }
   body #contact .column p {
     font-size: 18px !important;
   }
@@ -879,16 +918,16 @@ a {
 }
 
 @media screen and (max-width: 400px) {
-  body #project .container .column #gore .slicice {
+  body #project .container .column .gore .slicice {
     width: 300px;
   }
-  body #project .container .column #gore .slicice img {
+  body #project .container .column .gore .slicice img {
     width: 250px;
   }
-  body #project .container .column #dole .slicice {
+  body #project .container .column .dole .slicice {
     width: 300px;
   }
-  body #project .container .column #dole .slicice img {
+  body #project .container .column .dole .slicice img {
     width: 250px;
   }
   body #container-fluid .container #nav ul li {
