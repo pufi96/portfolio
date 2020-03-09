@@ -35,6 +35,12 @@ a {
 .colorT{
 	color: #ffff33;
 }
+.f-naslov{
+	font-size: 50px;
+	text-align: center;
+	font-weight: 700;
+	text-transform: uppercase;
+}
 #container-fluid{
 	background-color: #252934;
 	border-bottom: 2px solid #008080;
@@ -137,10 +143,6 @@ a {
 		h2{
 			margin-top: 80px;
 			margin-bottom: 90px;
-			font-size: 50px;
-			text-align: center;
-			font-weight: 700;
-			text-transform: uppercase;
 		}
 	}
 	.column{
@@ -224,10 +226,6 @@ a {
 		h2{
 			margin-top: 80px;
 			margin-bottom: 150px;
-			font-size: 50px;
-			text-align: center;
-			font-weight: 700;
-			text-transform: uppercase;
 		}
 	}
 	#skill-g{
@@ -358,10 +356,6 @@ a {
 		h2{
 			margin-top: 80px;
 			margin-bottom: 150px;
-			font-size: 50px;
-			text-align: center;
-			font-weight: 700;
-			text-transform: uppercase;
 		}
 	}
 	.column{
@@ -430,10 +424,6 @@ a {
 		h2{
 			margin-top: 80px;
 			margin-bottom: 100px;
-			font-size: 50px;
-			text-align: center;
-			font-weight: 700;
-			text-transform: uppercase;
 		}
 	}
 	#kontakt{
@@ -719,6 +709,9 @@ a {
 }
 @media screen and (max-width: 600px){
 	body{
+		.f-naslov{
+			font-size: 40px !important;
+		}
 		#home{
 			.container{
 				#naslov{
@@ -812,6 +805,9 @@ a {
 
 @media screen and (max-width: 400px){
 	body{
+		.f-naslov{
+			font-size: 30px !important;
+		}
 		#project{
 			.container{
 				.column{
