@@ -329,8 +329,9 @@ a {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 #skill #skill-g #skill-l {
@@ -478,7 +479,6 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 #skill #skill-g #skill-d .column .gore .slicice span, #skill #skill-g #skill-d .column .sredina .slicice span, #skill #skill-g #skill-d .column .dole .slicice span {

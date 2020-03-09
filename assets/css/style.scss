@@ -234,7 +234,7 @@ a {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: space-around;
+		justify-content: space-evenly;
 		#skill-l{
 			width: 496px;
 			.skills{
@@ -328,7 +328,6 @@ a {
 						flex-direction: column;
 						flex-wrap: wrap;
 						margin-top: 20px;
-						margin-bottom: 20px;
 						span{
 							width: 40px;
 							height: 40px;
